@@ -5,6 +5,9 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
+// Require the main Sass manifest file
+require('./assets/sass/main.scss');
+
 new Vue({
   router,
   store,
