@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav id="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" id="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-text-primary">
             <router-link class="navbar-item" to="/">Home</router-link>
             <router-link class="navbar-item" to="/concerts">Concerts</router-link>
