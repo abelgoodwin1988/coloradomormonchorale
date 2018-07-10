@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="container">
     <h3>Welcome To</h3>
     <h1>The Colorado Mormon Chorale Homepage</h1>
     <p></p>
