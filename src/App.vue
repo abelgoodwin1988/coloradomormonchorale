@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <nav class="navbar is-fixed-top is-warning is-bold" id="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top is-warning is-bold" id="navbar"
+        role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-text-primary is-large">
             <a class="navbar-item">
                 <router-link class="navbar-item" to="/">Home</router-link>
