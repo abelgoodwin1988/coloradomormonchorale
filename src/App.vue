@@ -1,31 +1,41 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <nav class="navbar is-fixed-top is-warning is-bold" id="navbar"
+        role="navigation" aria-label="main navigation">
+        <div class="navbar-brand has-text-primary is-large">
+            <a class="navbar-item">
+                <router-link class="navbar-item" to="/">Home</router-link>
+            </a>
+            <a class="navbar-item">
+                <router-link class="navbar-item" to="/concerts">Concerts</router-link>
+            </a>
+            <a class="navbar-item">
+                <router-link class="navbar-item" to="/about">About</router-link>
+            </a>
+            <a class="navbar-item">
+                <router-link class="navbar-item" to="/auditions">Auditions</router-link>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
     <router-view/>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Colorado Mormon Chorale</strong> - Denver, CO.
+            </p>
+            <p>
+                Copyright © 2000-2018 <strong>Colorado Mormon Chorale</strong>
+            </p>
+            <p>
+                <strong>Privacy Policy</strong>
+            </p>
+        </div>
+    </footer>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
