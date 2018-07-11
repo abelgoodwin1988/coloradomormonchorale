@@ -15,9 +15,9 @@
                 <router-link class="navbar-item" to="/auditions">Auditions</router-link>
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"><router-link class="navbar-item" to="/">Home</router-link></span>
-                <span aria-hidden="true"><router-link class="navbar-item" to="/concerts">Concerts</router-link></span>
-                <span aria-hidden="true"><router-link class="navbar-item" to="/auditions">Auditions</router-link></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
     </nav>

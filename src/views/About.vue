@@ -25,7 +25,7 @@
                                             </div>
                                         </div>
                                     </article>
-                                    <article class="message is-info">
+                                    <article class="message is-dark">
                                         <div class="message-header">
                                             <p>Leadership</p>
                                         </div>
