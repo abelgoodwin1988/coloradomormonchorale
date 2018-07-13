@@ -1,12 +1,13 @@
 <template>
     <div class="about">
-        <section class="hero is-primary is-bold is-fullheight">
+        <section class="hero is-link is-bold is-fullheight">
             <section class="hero">
                 <div class="hero-body">
                     <div class="container">
                         <section class="hero">
                             <div class="hero-body">
                                 <div class="container">
+
                                     <article class="message is-warning">
                                         <div class="message-header">
                                             <p>About Us</p>
@@ -51,7 +52,8 @@
                                             </div>
                                         </div>
                                     </article>
-                                    <article class="message is-dark">
+
+                                    <article class="message is-primary">
                                         <div class="message-header">
                                             <p>Leadership</p>
                                         </div>
@@ -75,6 +77,48 @@
                                                 </ul>
                                                 <p class="menu-label">
                                                     Music Leadership
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li>
+                                                        ...
+                                                    </li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                    </article>
+
+                                    <article class="message is-dark">
+                                        <div class="message-header">
+                                            <p>History</p>
+                                        </div>
+                                        <div class="message-body">
+                                            <aside class="menu">
+                                                <p class="menu-label">
+                                                    Conductors
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li>
+                                                        ...
+                                                    </li>
+                                                </ul>
+                                                 <p class="menu-label">
+                                                    Presidents
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li>
+                                                        ...
+                                                    </li>
+                                                </ul>
+                                                 <p class="menu-label">
+                                                    Concerts
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li>
+                                                        ...
+                                                    </li>
+                                                </ul>
+                                                 <p class="menu-label">
+                                                    Highlights
                                                 </p>
                                                 <ul class="menu-list">
                                                     <li>

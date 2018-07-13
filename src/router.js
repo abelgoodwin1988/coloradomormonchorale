@@ -4,6 +4,8 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Performances from './views/Performances.vue';
 import Auditions from './views/Auditions.vue';
+import Members from './views/Members.vue';
+import PrivacyPolicy from './views/PrivacyPolicy.vue'
 
 Vue.use(Router);
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/auditions',
       name: 'auditions',
       component: Auditions,
+    },
+    {
+      path: '/members',
+      name: 'members',
+      component: Members,
+    },
+    {
+      path: '/privacypolicy',
+      name: 'privacypolicy',
+      component: PrivacyPolicy,
     },
   ],
 });
