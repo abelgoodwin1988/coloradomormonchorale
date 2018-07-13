@@ -7,7 +7,7 @@
                 <router-link class="navbar-item" to="/">Home</router-link>
             </a>
             <a class="navbar-item">
-                <router-link class="navbar-item" to="/concerts">Concerts</router-link>
+                <router-link class="navbar-item" to="/performances">Performances</router-link>
             </a>
             <a class="navbar-item">
                 <router-link class="navbar-item" to="/about">About</router-link>
@@ -38,4 +38,3 @@
     </footer>
   </div>
 </template>
-
