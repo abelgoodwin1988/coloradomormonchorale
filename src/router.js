@@ -5,7 +5,7 @@ import About from './views/About.vue';
 import Performances from './views/Performances.vue';
 import Auditions from './views/Auditions.vue';
 import Members from './views/Members.vue';
-import PrivacyPolicy from './views/PrivacyPolicy.vue'
+import PrivacyPolicy from './views/PrivacyPolicy.vue';
 
 Vue.use(Router);
 
@@ -42,7 +42,7 @@ export default new Router({
       component: PrivacyPolicy,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-      return { x: 0, y: 0}
-  }
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
