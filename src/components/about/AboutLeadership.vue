@@ -1,10 +1,10 @@
 <template>
   <!-- eslint-disable -->
   <article class="message is-primary">
-    <div class="message-header">
+    <div class="message-header" @click="toggleBody">
       <p>Leadership</p>
     </div>
-    <div class="message-body">
+    <div v-if="isOpened" class="message-body">
       <aside class="menu">
         <p class="menu-label">
             Choir Leadership
@@ -37,6 +37,21 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      isOpened: false,
+    };
+  },
+  methods: {
+    toggleBody() {
+      this.isOpened = !this.isOpened;
+    },
+  },
 };
 </script>
+
+<style scoped>
+ .message-header {
+   cursor: pointer;
+ }
+</style>

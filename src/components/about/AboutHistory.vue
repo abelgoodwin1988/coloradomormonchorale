@@ -1,10 +1,10 @@
 <template>
   <!-- eslint-disable -->
   <article class="message is-dark">
-      <div class="message-header">
+      <div class="message-header" @click="toggleBody">
           <p>History</p>
       </div>
-      <div class="message-body">
+      <div v-if="isOpened" class="message-body">
           <aside class="menu">
               <p class="menu-label">
                   Conductors
@@ -42,3 +42,24 @@
       </div>
   </article>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpened: false,
+    };
+  },
+  methods: {
+    toggleBody() {
+      this.isOpened = !this.isOpened;
+    },
+  },
+};
+</script>
+
+<style scoped>
+ .message-header {
+   cursor: pointer;
+ }
+</style>
