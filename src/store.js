@@ -1,12 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import faker from 'faker';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    count: 0,
     events: [], // an array of events that will eventually be retrieved from a database
     // event: {
     //   // break date up into date, day of week, time
@@ -18,11 +16,20 @@ export default new Vuex.Store({
     // },
   },
   mutations: {
-    // set state to payload from action
+    // set state.events to payload from action
+    // this may take more than events data in the future
+    // should contain data to be loaded before page creation
+    // this is public data that doens't require authorization
     initState(state, payload) {
       state.events = payload;
     },
   },
   actions: {
+    initState({ commit }, payload) {
+      // currently creating a mock list of events - mock async behavior 250ms delay
+      setTimeout(() => {
+        commit('initState', payload);
+      }, 250);
+    },
   },
 });
