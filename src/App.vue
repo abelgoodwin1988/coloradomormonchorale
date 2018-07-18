@@ -48,7 +48,8 @@
 <script>
 export default {
   beforeCreate() {
-    console.log('App vue created!');
+    // create an array of mock data - in final app, we get public data here
+    this.$store.dispatch('initState', [{ 'name': 'Bob' }, { 'name': 'Jane' }]);
   },
 };
 </script>
