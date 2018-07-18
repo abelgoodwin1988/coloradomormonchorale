@@ -18,6 +18,7 @@ export default new Vuex.Store({
     // },
   },
   mutations: {
+    // set state to payload from action
     initState(state, payload) {
       state.events = payload;
     },
