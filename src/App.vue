@@ -44,3 +44,11 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate() {
+    console.log('App vue created!');
+  },
+};
+</script>
