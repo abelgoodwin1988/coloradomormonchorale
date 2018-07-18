@@ -66,17 +66,21 @@ git add -A && git commit -am "new build" && git push
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/abelgoodwin1988/coloradomormonchorale/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+As a stable deployment version emerges we will begin implementing a versioning methodology, potentially following [SemVer](http://semver.org/).
+
+For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Abel Goodwin** - *Initial work*
+* **Jacob Goodwin** - *Initial work*
+* **CMC Website Committee** - *Concept work & Guiding Committee*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/abelgoodwin1988/coloradomormonchorale/graphs/contributors) who participate in this project.
 
 ## License
 
@@ -84,7 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Evan You and everyone building the Vue Framework
+* Those contributing to libraries key to the success of this project
+* Everyone who has and is actively contributing to OSS everywhere
