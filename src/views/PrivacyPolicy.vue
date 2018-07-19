@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
     <div class="auditions">
         <section class="hero is-link is-bold is-fullheight">
             <section class="hero">
