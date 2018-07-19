@@ -34,7 +34,7 @@ export default new Vuex.Store({
             time: date.format('h:mm z'), // example 1:35 MDT
             imageURL: faker.image.dataUri(800, 600), // blank square since lorem pixel is quite slow
             // imageURL: faker.image.imageUrl(800, 600, 'abstract'),
-            additionalInfo: faker.lorem.words(4),
+            additionalInfo: faker.lorem.words(4), // Doors open 1/2 hour prior on current page
             featured: faker.random.boolean(),
           };
         });
