@@ -31,15 +31,20 @@
                                         <nav class="panel">
                                             <p class="panel-tabs">
                                                 <a 
-                                                v-bind:class="{ 'is-active': display_cmc, 'has-text-weight-bold': display_cmc, }" 
+                                                v-bind:class="{ 'is-active': display_cmc,
+                                                                'has-text-weight-bold': display_cmc,
+                                                                }" 
                                                 @click="toggle_cmc">
                                                 Colorado Mormon Chorale</a>
                                                 <a 
-                                                v-bind:class="{ 'is-active': display_log, 'has-text-weight-bold': display_log, }" 
+                                                v-bind:class="{ 'is-active': display_log, 
+                                                                'has-text-weight-bold': display_log,
+                                                                }" 
                                                 @click="toggle_log">
                                                 Lamb of God</a>
                                             </p>
-                                            <colorado-mormon-chorale v-if="display_cmc"></colorado-mormon-chorale>
+                                            <colorado-mormon-chorale v-if="display_cmc">
+                                            </colorado-mormon-chorale>
                                             <lamb-of-god v-if="display_log"></lamb-of-god>
                                         </nav>
                                         
