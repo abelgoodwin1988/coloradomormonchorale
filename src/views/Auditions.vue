@@ -30,10 +30,19 @@
                                     <div class="container">
                                         <nav class="panel">
                                             <p class="panel-tabs">
-                                                <a class="is-active">Colorado Mormon Chorale</a>
-                                                <a>Lamb of God</a>
+                                                <a 
+                                                v-bind:class="{ 'is-active': toggle_cmc, }" 
+                                                @click="toggle_cmc">
+                                                Colorado Mormon Chorale</a>
+                                                <a 
+                                                v-bind:class="{ 'is-active': toggle_log, }" 
+                                                @click="toggle_log">
+                                                Lamb of God</a>
                                             </p>
+                                            <colorado-mormon-chorale v-if="display_cmc"></colorado-mormon-chorale>
+                                            <lamb-of-god v-if="display_log"></lamb-of-god>
                                         </nav>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -45,3 +54,35 @@
     </div>
 </template>
 
+<script>
+import LambOfGod from '../components/auditions/LambOfGod.vue';
+import ColoradoMormonChorale from '../components/auditions/ColoradoMormonChorale.vue';
+
+export default {
+  components: {
+    LambOfGod,
+    ColoradoMormonChorale,
+  },
+  data() {
+    return {
+      display_cmc: true,
+      display_log: false,
+    };
+  },
+  methods: {
+    toggle_cmc() {
+      this.display_cmc = true;
+      this.display_log = false;
+    },
+    toggle_log() {
+      this.display_cmc = false;
+      this.display_log = true;
+    },
+  },
+};
+
+</script>
+
+<style>
+
+</style>

@@ -1,4 +1,5 @@
 <template>
-    <section v-if="show_lambofgod" class="section">
+    <section class="section">
+        log
     </section>
 </template>
