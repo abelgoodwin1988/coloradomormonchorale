@@ -2,21 +2,19 @@
     <section class="section">
         <div class="columns">
             <div class="column is-one-quarter">
-                1/4
+                A list of available times for CMC Auditions
             </div>
             <div class="column">
-                <div class="field-body">
-                    <div class="field">
-                        <label class="label has-text-white">First Name</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="First Name">
-                        </div>
+                <div class="field">
+                    <label class="label has-text-white">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name">
                     </div>
-                    <div class="field">
-                        <label class="label has-text-white">Last Name</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="Last Name">
-                        </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Last Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="field">
@@ -44,10 +42,8 @@
                     </div>
                 </div>
                 <!-- PHONE  -->
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label has-text-white">Phone</label>
-                    </div>
+                    
+                    <label class="label has-text-white">Phone</label>
                     <div class="field-body">
                         <div class="field">
                             <div class="control">
@@ -66,7 +62,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
                 <div class="field">
                     <label class="label has-text-white">Email</label>
@@ -74,9 +69,9 @@
                         <input class="input" type="text" placeholder="Email">
                     </div>
                 </div>
-                <p>Current Chorale Members:</p>
+                <p class="is-size-3">Current Chorale Members:</p>
                 <div class="field">
-                    <label class="label has-text-white">Membership Statuis</label>
+                    <label class="label has-text-white">Membership Status</label>
                     <div class="control">
                         <input class="input" type="text" placeholder="Membership Status">
                     </div>
