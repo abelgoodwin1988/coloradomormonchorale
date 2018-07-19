@@ -3,5 +3,5 @@
 	filemode = false
 	bare = false
 	logallrefupdates = true
-	ignorecase = true
+	ignorecase = false
 	autocrlf = input
