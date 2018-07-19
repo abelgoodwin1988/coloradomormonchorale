@@ -35,7 +35,14 @@ export default new Vuex.Store({
             imageURL: faker.image.dataUri(800, 600), // blank square since lorem pixel is quite slow
             // imageURL: faker.image.imageUrl(800, 600, 'abstract'),
             additionalInfo: faker.lorem.words(4), // Doors open 1/2 hour prior on current page
-            featured: faker.random.boolean(),
+            featured: faker.random.boolean(), // determine if included in carousel
+            address: {
+              venue: faker.lorem.words(4),
+              street: `${faker.address.streetAddress()}  ${faker.address.streetSuffix()}`, // template string
+              city: faker.address.city(),
+              state: faker.address.stateAbbr(),
+              zipCode: faker.address.zipCode(),
+            },
           };
         });
       setTimeout(() => {
