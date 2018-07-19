@@ -23,15 +23,18 @@ export default new Vuex.Store({
       // create array of fake data - actual API/REST call will happen here
       // currently creating a mock list of events - mock async behavior 250ms delay
       const mockData = new Array(5).fill(null)
-        .map(() => (
-          {
+        .map(() => {
+          // get a complete date, break this up into day of week and time later
+          const date = faker.date.between('2018-08-01', '2018-12-01');
+          return {
             title: faker.lorem.words(3),
-            date: faker.date.between('2018-08-01', '2018-12-01'),
-            imageURL: faker.image.imageUrl(),
+            calendarDate: date,
+            imageURL: faker.image.dataUri(800, 600), // blank square since lorem pixel is quite slow
+            // imageURL: faker.image.imageUrl(800, 600, 'abstract'),
             additionalInfo: faker.lorem.words(4),
             featured: faker.random.boolean(),
-          }
-        ));
+          };
+        });
       setTimeout(() => {
         commit('initState', mockData);
       }, 100);
