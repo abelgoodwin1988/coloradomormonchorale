@@ -47,9 +47,9 @@
 
 <script>
 export default {
-  beforeCreate() {
-    // create an array of mock data - in final app, we get public data here
-    this.$store.dispatch('initState', [{ 'name': 'Bob' }, { 'name': 'Jane' }]);
+  created() {
+    // dispatch init once vue instance is created (don't want to overwrite data in async operation)
+    this.$store.dispatch('initState');
   },
 };
 </script>
