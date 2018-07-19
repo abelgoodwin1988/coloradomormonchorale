@@ -1,19 +1,13 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import faker from 'faker';
 
 Vue.use(Vuex);
+
 
 export default new Vuex.Store({
   state: {
     events: [], // an array of events that will eventually be retrieved from a database
-    // event: {
-    //   // break date up into date, day of week, time
-    //   title: faker.lorem.words(3),
-    //   date: faker.date.between('2018-08-01', '2018-12-01'), // returns a javascript Date
-    //   imageURL: faker.image.imageUrl(),
-    //   additionalInfo: faker.lorem.words(4),
-    //   featured: faker.random.boolean(),
-    // },
   },
   mutations: {
     // set state.events to payload from action
@@ -25,11 +19,22 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    initState({ commit }, payload) {
+    initState({ commit }) {
+      // create array of fake data - actual API/REST call will happen here
       // currently creating a mock list of events - mock async behavior 250ms delay
+      const mockData = new Array(5).fill(null)
+        .map(() => (
+          {
+            title: faker.lorem.words(3),
+            date: faker.date.between('2018-08-01', '2018-12-01'),
+            imageURL: faker.image.imageUrl(),
+            additionalInfo: faker.lorem.words(4),
+            featured: faker.random.boolean(),
+          }
+        ));
       setTimeout(() => {
-        commit('initState', payload);
-      }, 250);
+        commit('initState', mockData);
+      }, 100);
     },
   },
 });
