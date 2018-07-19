@@ -27,6 +27,14 @@
                                                 auditions@cmcco.org if you have any questions. </p>
                                         </div>
                                     </article>
+                                    <div class="container">
+                                        <nav class="panel">
+                                            <p class="panel-tabs">
+                                                <a class="is-active">Colorado Mormon Chorale</a>
+                                                <a>Lamb of God</a>
+                                            </p>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -36,3 +44,4 @@
         </section>
     </div>
 </template>
+
