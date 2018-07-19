@@ -42,7 +42,6 @@
                     </div>
                 </div>
                 <!-- PHONE  -->
-                    
                     <label class="label has-text-white">Phone</label>
                     <div class="field-body">
                         <div class="field">
