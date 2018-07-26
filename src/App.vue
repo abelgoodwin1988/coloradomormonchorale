@@ -44,3 +44,12 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  created() {
+    // dispatch init once vue instance is created (don't want to overwrite data in async operation)
+    this.$store.dispatch('initState');
+  },
+};
+</script>
