@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import faker from 'faker';
-import moment from 'moment-timezone'; // both moment and moment-timezone are installed
+import axios from 'axios';
 
 Vue.use(Vuex);
 
@@ -20,7 +19,12 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    initState({ commit }) {
+    initState() {
+      axios.get('/events')
+        .then((response) => {
+          console.log('The response...');
+          console.log(response.data);
+        });
     },
   },
 });

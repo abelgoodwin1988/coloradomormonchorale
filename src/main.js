@@ -1,16 +1,15 @@
 import Vue from 'vue';
+import axios from 'axios';
+
 import App from './App.vue';
 import router from './router';
 import store from './store';
 
-import axios from 'axios';
-
 Vue.config.productionTip = false;
 
 
-axios.defaults = {
-  baseURL: 'http://localhost:3000', // for development dB
-};
+axios.defaults.baseURL = 'http://localhost:3000'; // for development dB
+
 
 // Require the main Sass manifest file
 require('./assets/sass/main.scss');
