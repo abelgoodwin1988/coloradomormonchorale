@@ -11,38 +11,38 @@
         "street1": "6465 W Jewell Ave",
         "street2": "",
         "city": "Lakewood",
-        "state": "Colorado",
+        "state": "CO",
         "zip": "80232"
       }
     },
     {
       "id": 1,
-      "title": "Rehearsals Resume",
-      "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
-      "time": "Wed, 22 Aug 2018 19:00:00 GMT-0600",
+      "title": "Religious Freedom with the Columbine Stake",
+      "mapURL": "http://www.google.com/maps/place/6705+S+Webster,+Littleton+CO+80128",
+      "time": "Thu, 22 Sep 2018 19:00:00 GMT-0600",
       "otherInfo": "Doors open 1/2 hour prior",
       "address": {
-        "location": "Jewell Building",
-        "street1": "6465 W Jewell Ave",
+        "location": "Webster Building",
+        "street1": "6705 S Webster",
         "street2": "",
-        "city": "Lakewood",
-        "state": "Colorado",
-        "zip": "80232"
+        "city": "Littleton",
+        "state": "CO",
+        "zip": "80128"
       }
     },
     {
       "id": 2,
-      "title": "Rehearsals Resume",
-      "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
-      "time": "Wed, 22 Aug 2018 19:00:00 GMT-0600",
+      "title": "Temple Workers Devotional",
+      "mapURL": "http://www.google.com/maps/place/1939+E+Easter+Ave,+Littleton+CO+80122",
+      "time": "Sun, 16 Sep 2018 17:30:00 GMT-0600",
       "otherInfo": "Doors open 1/2 hour prior",
       "address": {
-        "location": "Jewell Building",
-        "street1": "6465 W Jewell Ave",
+        "location": "Easter Building",
+        "street1": "1939 E Easter Ave",
         "street2": "",
-        "city": "Lakewood",
-        "state": "Colorado",
-        "zip": "80232"
+        "city": "Littleton",
+        "state": "CO",
+        "zip": "80128"
       }
     }
   ]
