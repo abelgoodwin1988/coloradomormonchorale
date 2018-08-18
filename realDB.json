@@ -14,6 +14,36 @@
         "state": "Colorado",
         "zip": "80232"
       }
+    },
+    {
+      "id": 1,
+      "title": "Rehearsals Resume",
+      "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
+      "time": "Wed, 22 Aug 2018 19:00:00 GMT-0600",
+      "otherInfo": "Doors open 1/2 hour prior",
+      "address": {
+        "location": "Jewell Building",
+        "street1": "6465 W Jewell Ave",
+        "street2": "",
+        "city": "Lakewood",
+        "state": "Colorado",
+        "zip": "80232"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Rehearsals Resume",
+      "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
+      "time": "Wed, 22 Aug 2018 19:00:00 GMT-0600",
+      "otherInfo": "Doors open 1/2 hour prior",
+      "address": {
+        "location": "Jewell Building",
+        "street1": "6465 W Jewell Ave",
+        "street2": "",
+        "city": "Lakewood",
+        "state": "Colorado",
+        "zip": "80232"
+      }
     }
   ]
 }
