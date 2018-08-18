@@ -19,11 +19,12 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    initState() {
+    initState({ commit }) {
       axios.get('/events')
         .then((response) => {
-          console.log('The response...');
-          console.log(response.data);
+          // console.log('The response...');
+          // console.log(response.data);
+          commit('initState', response.data);
         });
     },
   },
