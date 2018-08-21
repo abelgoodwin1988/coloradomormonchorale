@@ -4,8 +4,9 @@
       "id": 0,
       "title": "Rehearsals Resume",
       "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
-      "time": "Wed, 22 Aug 2018 19:00:00 GMT-0600",
+      "time": "2018-08-23T01:00:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",
+      "featured": "true",
       "address": {
         "location": "Jewell Building",
         "street1": "6465 W Jewell Ave",
@@ -19,8 +20,9 @@
       "id": 1,
       "title": "Religious Freedom with the Columbine Stake",
       "mapURL": "http://www.google.com/maps/place/6705+S+Webster,+Littleton+CO+80128",
-      "time": "Thu, 22 Sep 2018 19:00:00 GMT-0600",
+      "time": "2018-09-14T01:00:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",
+      "featured": "true",
       "address": {
         "location": "Webster Building",
         "street1": "6705 S Webster",
@@ -34,8 +36,9 @@
       "id": 2,
       "title": "Temple Workers Devotional",
       "mapURL": "http://www.google.com/maps/place/1939+E+Easter+Ave,+Littleton+CO+80122",
-      "time": "Sun, 16 Sep 2018 17:30:00 GMT-0600",
+      "time": "2018-09-16T24:30:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",
+      "featured": "true",
       "address": {
         "location": "Easter Building",
         "street1": "1939 E Easter Ave",
