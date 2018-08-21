@@ -22,8 +22,11 @@ export default new Vuex.Store({
     initState({ commit }) {
       axios.get('/events')
         .then((response) => {
-          // console.log('The response...');
-          // console.log(response.data);
+          // console.log('Local Time');
+          // const date = new Date(response.data[0].time);
+          // console.log(date.toString());
+          // console.log('UTC Time');
+          // console.log(date.toUTCString());
           commit('initState', response.data);
         });
     },
