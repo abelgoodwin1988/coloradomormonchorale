@@ -1,5 +1,5 @@
 <template>
-    <div class="auditions">
+    <div class="performances">
         <section class="hero is-link is-bold is-fullheight">
           <div class="container">
               <section class="hero">
