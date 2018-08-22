@@ -3,7 +3,7 @@ const faker = require('faker');
 module.exports = () => {
   const data = { events: [] };
   // Create 1000 users
-  for (let i = 0; i < 100; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     data.events.push({
       id: i,
       title: faker.lorem.words(3),
