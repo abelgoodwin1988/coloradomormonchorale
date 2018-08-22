@@ -1,34 +1,34 @@
 <template>
     <div class="performances">
         <section class="hero is-link is-bold is-fullheight">
-          <div class="container">
-              <section class="hero">
-                  <div class="hero-body">
-                      <div class="container">
-                          <h1 class="title">
-                              Performances
-                          </h1>
-                          <div
-                            class="box"
-                            v-for="(event,index) in events"
-                            :key="index">
-                            <article class="media">
-                              <div class="media-left">
-                                <figure class="image is-4by3">
-                                  <img :src="event.imageURL">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="content">
-                                  <h3>{{ event.title }}</h3>
+          <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                  <section class="hero">
+                      <div class="hero-body">
+                          <div class="container">
+                              <h1 class="title">
+                                  Performances
+                              </h1>
+                              <div
+                                class="box"
+                                v-for="(event,index) in events"
+                                :key="index">
+                                <div class="columns">
+                                  <div class="column is-one-third">
+                                    <img :src="event.imageURL" alt="Event Image">
+                                  </div>
+                                  <div class="column">
+                                    <h1>{{ event.title }}</h1>
+                                  </div>
                                 </div>
                               </div>
-                            </article>
                           </div>
                       </div>
-                  </div>
-              </section>
-          </div>
+                  </section>
+                </div>
+              </div>
+          </section>
         </section>
     </div>
 </template>
@@ -44,8 +44,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  figure {
-    width: 150px;
-  }
 </style>
 
