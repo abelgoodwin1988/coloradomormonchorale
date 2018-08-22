@@ -23,7 +23,11 @@ export default new Vuex.Store({
     initState({ commit }) {
       axios.get('/events')
         .then((response) => {
-          const modifiedResponse = response.data.map((event) => {
+          const responseData = response.data;
+          // sort data by date from most recent
+          responseData.sort((a, b) => (new Date(a.time) - new Date(b.time)));
+          // modify date format for vuex state
+          const modifiedResponse = responseData.map((event) => {
             // use spread operator to create new object with modifed date storage
             const newEvent =
             {
