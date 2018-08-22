@@ -15,11 +15,12 @@
                                 v-for="(event,index) in events"
                                 :key="index">
                                 <div class="columns is-centered">
-                                  <div class="column is-one-quarter-desktop is-one-third-tablet">
+                                  <div class="column is-one-third-desktop is-one-third-tablet">
                                     <img :src="event.imageURL" alt="Event Image">
                                   </div>
                                   <div class="column">
                                     <h3>{{ event.title }}</h3>
+                                    <h4>{{ event.time }}</h4>
                                   </div>
                                 </div>
                               </div>
@@ -34,11 +35,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   computed: {
-    events() {
-      return this.$store.state.events;
-    },
+    ...mapState({
+      events: state => state.events,
+
+    }),
   },
 };
 </script>
