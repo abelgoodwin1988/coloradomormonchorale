@@ -11,15 +11,15 @@
                                   Performances
                               </h1>
                               <div
-                                class="box"
+                                class="box content"
                                 v-for="(event,index) in events"
                                 :key="index">
-                                <div class="columns">
-                                  <div class="column is-one-third">
+                                <div class="columns is-centered">
+                                  <div class="column is-one-quarter-desktop is-one-third-tablet">
                                     <img :src="event.imageURL" alt="Event Image">
                                   </div>
                                   <div class="column">
-                                    <h1>{{ event.title }}</h1>
+                                    <h3>{{ event.title }}</h3>
                                   </div>
                                 </div>
                               </div>
@@ -44,5 +44,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 </style>
 
