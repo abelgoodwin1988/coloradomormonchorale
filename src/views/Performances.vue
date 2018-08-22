@@ -10,7 +10,10 @@
                                     <h1 class="title">
                                         Performances
                                     </h1>
-                                    <div class="box">
+                                    <div
+                                      class="box"
+                                      v-for="(event,index) in events"
+                                      :key="index">
                                       <article class="media">
                                         <figure class="media-left">
                                           <p class="image is-4x3">
@@ -19,7 +22,7 @@
                                         </figure>
                                         <div class="media-content">
                                           <div class="content">
-                                            <p>blablablabla</p>
+                                            <h3>{{ event.title }}</h3>
                                           </div>
                                         </div>
                                       </article>
@@ -36,6 +39,10 @@
 
 <script>
 export default {
-
+  computed: {
+    events() {
+      return this.$store.state.events;
+    },
+  },
 };
 </script>
