@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "Rehearsals Resume",
-      "imageURL": "https://via.placeholder.com/800x600",
+      "imageURL": "https://via.placeholder.com/400x300",
       "mapURL": "https://www.google.com/maps/place/6465+W+Jewell+Ave,+Lakewood+CO+80232",
       "time": "2018-08-23T01:00:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",
@@ -20,7 +20,7 @@
     {
       "id": 1,
       "title": "Religious Freedom with the Columbine Stake",
-      "imageURL": "https://via.placeholder.com/800x600",
+      "imageURL": "https://via.placeholder.com/400x300",
       "mapURL": "http://www.google.com/maps/place/6705+S+Webster,+Littleton+CO+80128",
       "time": "2018-09-14T01:00:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",
@@ -37,7 +37,7 @@
     {
       "id": 2,
       "title": "Temple Workers Devotional",
-      "imageURL": "https://via.placeholder.com/800x600",
+      "imageURL": "https://via.placeholder.com/400x300",
       "mapURL": "http://www.google.com/maps/place/1939+E+Easter+Ave,+Littleton+CO+80122",
       "time": "2018-09-16T24:30:00.000Z",
       "otherInfo": "Doors open 1/2 hour prior",

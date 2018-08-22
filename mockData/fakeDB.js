@@ -7,7 +7,7 @@ module.exports = () => {
     data.events.push({
       id: i,
       title: faker.lorem.words(3),
-      imageURL: 'https://via.placeholder.com/800x600',
+      imageURL: 'https://via.placeholder.com/400x300',
       mapUrl: 'https://www.maps.google.com',
       time: faker.date.future(1),
       otherInfo: faker.random.words(),
