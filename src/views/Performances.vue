@@ -41,7 +41,6 @@ export default {
   computed: {
     ...mapState({
       events: state => state.events,
-
     }),
   },
 };

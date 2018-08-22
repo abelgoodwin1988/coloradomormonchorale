@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
+import moment from 'moment-timezone';
 
 Vue.use(Vuex);
 
@@ -22,7 +23,16 @@ export default new Vuex.Store({
     initState({ commit }) {
       axios.get('/events')
         .then((response) => {
-          commit('initState', response.data);
+          const modifiedResponse = response.data.map((event) => {
+            // use spread operator to create new object with modifed date storage
+            const newEvent =
+            {
+              ...event,
+              time: moment.tz(event.time, 'America/Denver').format('dddd, MMMM Do YYYY, h:mm:ss a z'),
+            };
+            return newEvent;
+          });
+          commit('initState', modifiedResponse);
         });
     },
   },
