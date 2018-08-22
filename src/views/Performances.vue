@@ -58,5 +58,9 @@ export default {
     margin-right: auto;
     display: block;
   }
+
+  .columns {
+    align-items: center;
+  }
 </style>
 
