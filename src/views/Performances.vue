@@ -17,7 +17,7 @@
                                       <article class="media">
                                         <figure class="media-left">
                                           <p class="image is-4x3">
-                                            <img src="https://via.placeholder.com/200x150">
+                                            <img :src="event.imageURL">
                                           </p>
                                         </figure>
                                         <div class="media-content">
@@ -46,3 +46,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  img {
+    max-width: 300px;
+    max-height: 225px;
+  }
+</style>
