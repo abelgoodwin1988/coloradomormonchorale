@@ -15,11 +15,11 @@
                                       v-for="(event,index) in events"
                                       :key="index">
                                       <article class="media">
-                                        <figure class="media-left">
-                                          <p class="image is-4x3">
+                                        <div class="media-left">
+                                          <figure class="image is-4by3">
                                             <img :src="event.imageURL">
-                                          </p>
-                                        </figure>
+                                          </figure>
+                                        </div>
                                         <div class="media-content">
                                           <div class="content">
                                             <h3>{{ event.title }}</h3>
@@ -47,9 +47,9 @@ export default {
 };
 </script>
 
-<style scoped>
-  img {
-    max-width: 300px;
-    max-height: 225px;
+<style lang="scss" scoped>
+  figure {
+    width: 150px;
   }
 </style>
+
