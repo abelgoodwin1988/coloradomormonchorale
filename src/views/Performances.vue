@@ -1,4 +1,5 @@
 <template>
+<!-- eslint-disable -->
     <div class="performances">
         <section class="hero is-link is-bold is-fullheight">
           <section class="hero">
@@ -20,7 +21,12 @@
                                   </div>
                                   <div class="column">
                                     <h3>{{ event.title }}</h3>
-                                    <h4>{{ event.time }}</h4>
+                                    <h6>{{ event.time }}</h6>
+                                    <h6>{{ event.address.location }}</h6>
+                                    <p>{{ event.address.street1 }}</p>
+                                    <p>{{ event.address.street2 }}</p>
+                                    <p>{{ event.address.city }}, {{event.address.state}} {{event.address.zip}}</p>
+                                    <h6>{{ event.otherInfo }}</h6>
                                   </div>
                                 </div>
                               </div>
