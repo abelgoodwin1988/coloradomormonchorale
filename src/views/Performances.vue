@@ -13,8 +13,8 @@
                               </h1>
                               <div
                                 class="box content"
-                                v-for="(event,index) in events"
-                                :key="index">
+                                v-for="(event) in events"
+                                :key="event.id">
                                 <div class="columns is-centered">
                                   <div class="column is-one-third-desktop is-one-third-tablet">
                                     <img :src="event.imageURL" alt="Event Image">
