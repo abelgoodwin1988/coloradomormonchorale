@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import faker from 'faker';
-import moment from 'moment-timezone'; // both moment and moment-timezone are installed
+import axios from 'axios';
+import moment from 'moment-timezone';
 
 Vue.use(Vuex);
 
@@ -21,33 +21,23 @@ export default new Vuex.Store({
   },
   actions: {
     initState({ commit }) {
-      // create array of fake data - actual API/REST call will happen here
-      // currently creating a mock list of events - mock async behavior 250ms delay
-      const mockData = new Array(5).fill(null)
-        .map(() => {
-          // get a complete date, break this up into day of week and time later
-          const date = moment(faker.date.between('2018-08-01', '2018-12-01'))
-            .tz('America/Denver'); // format as moment
-          return {
-            title: faker.lorem.words(3),
-            calendarDate: date.format('dddd, MMMM DD, YYYY'), // example - Tuesday, October 02, 2018
-            time: date.format('h:mm z'), // example 1:35 MDT
-            imageURL: faker.image.dataUri(800, 600), // blank square since lorem pixel is quite slow
-            // imageURL: faker.image.imageUrl(800, 600, 'abstract'),
-            additionalInfo: faker.lorem.words(4), // Doors open 1/2 hour prior on current page
-            featured: faker.random.boolean(), // determine if included in carousel
-            address: {
-              venue: faker.lorem.words(4),
-              street: `${faker.address.streetAddress()}  ${faker.address.streetSuffix()}`, // template string
-              city: faker.address.city(),
-              state: faker.address.stateAbbr(),
-              zipCode: faker.address.zipCode(),
-            },
-          };
+      axios.get('/events')
+        .then((response) => {
+          const responseData = response.data;
+          // sort data by date from most recent
+          responseData.sort((a, b) => (new Date(a.time) - new Date(b.time)));
+          // modify date format for vuex state
+          const modifiedResponse = responseData.map((event) => {
+            // use spread operator to create new object with modifed date storage
+            const newEvent =
+            {
+              ...event,
+              time: moment.tz(event.time, 'America/Denver').format('dddd, MMMM Do YYYY, h:mm:ss a z'),
+            };
+            return newEvent;
+          });
+          commit('initState', modifiedResponse);
         });
-      setTimeout(() => {
-        commit('initState', mockData);
-      }, 100);
     },
   },
 });
