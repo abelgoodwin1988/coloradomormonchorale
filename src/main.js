@@ -1,3 +1,7 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faAngleDoubleDown, faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 import Vue from 'vue';
 import axios from 'axios';
 
@@ -5,8 +9,12 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-Vue.config.productionTip = false;
 
+library.add(faAngleDoubleDown, faAngleDoubleUp);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+Vue.config.productionTip = false;
 
 axios.defaults.baseURL = 'http://localhost:3000'; // for development dB
 
