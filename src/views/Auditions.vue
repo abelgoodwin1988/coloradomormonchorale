@@ -28,8 +28,8 @@
                                         </div>
                                     </article>
                                     <div class="container">
-                                        <nav class="panel">
-                                            <p class="panel-tabs">
+                                        <div class="container">
+                                            <p class="tabs">
                                                 <a
                                                 v-bind:class="{ 'is-active': display_cmc,
                                                                 'has-text-weight-bold': display_cmc,
@@ -43,10 +43,11 @@
                                                 @click="toggle_log">
                                                 Lamb of God</a>
                                             </p>
-                                            <colorado-mormon-chorale v-if="display_cmc">
-                                            </colorado-mormon-chorale>
-                                            <lamb-of-god v-if="display_log"></lamb-of-god>
-                                        </nav>
+
+                                        </div>
+                                        <colorado-mormon-chorale v-if="display_cmc">
+                                        </colorado-mormon-chorale>
+                                        <lamb-of-god v-if="display_log"></lamb-of-god>
                                     </div>
                                 </div>
                             </div>
