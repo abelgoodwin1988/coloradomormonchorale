@@ -37,16 +37,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .columns {
-    align-items: center;
-  }
-</style>
-
