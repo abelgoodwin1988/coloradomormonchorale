@@ -6,12 +6,18 @@ import config from './firebaseConfig';
 firebase.initializeApp(config);
 
 // Initialize Cloud Firestore through Firebase
-let db = firebase.firestore();
+const db = firebase.firestore();
 
 // Disable deprecated features
 db.settings({
   timestampsInSnapshots: true,
 });
 
-export const performancesRef = db.collection('performances');
-export const authRef = firebase.auth();
+const performancesRef = db.collection('performances');
+const authRef = firebase.auth();
+
+export {
+  db,
+  performancesRef,
+  authRef,
+};
