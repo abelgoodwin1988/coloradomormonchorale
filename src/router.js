@@ -6,6 +6,7 @@ import Performances from './views/Performances.vue';
 import Auditions from './views/Auditions.vue';
 import Members from './views/Members.vue';
 import PrivacyPolicy from './views/PrivacyPolicy.vue';
+import Login from './views/admin/Login.vue';
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/privacypolicy',
       name: 'privacypolicy',
       component: PrivacyPolicy,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
     },
   ],
   scrollBehavior() {
