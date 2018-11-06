@@ -3,6 +3,8 @@
   <article class="message is-warning">
     <div class="message-header" @click="toggleBody">
       <p>About Us</p>
+      <font-awesome-icon v-if="isOpened" icon="angle-double-up"></font-awesome-icon>
+      <font-awesome-icon v-else icon="angle-double-down"></font-awesome-icon>
     </div>
     <div v-if="isOpened" class="message-body">
       <p>
@@ -19,7 +21,7 @@
 export default {
   data() {
     return {
-      isOpened: false,
+      isOpened: true,
     };
   },
   methods: {
@@ -30,9 +32,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
  .message-header {
    cursor: pointer;
+   .left {
+       display: flex;
+       justify-content: flex-start;
+   }
+   .right {
+       display: flex;
+       justify-content: flex-end;
+       text-align: right;
+   }
  }
 </style>
-

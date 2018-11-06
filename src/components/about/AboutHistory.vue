@@ -3,6 +3,8 @@
   <article class="message is-dark">
       <div class="message-header" @click="toggleBody">
           <p>History</p>
+          <font-awesome-icon v-if="isOpened" icon="angle-double-up"></font-awesome-icon>
+      <font-awesome-icon v-else icon="angle-double-down"></font-awesome-icon>
       </div>
       <div v-if="isOpened" class="message-body">
           <aside class="menu">

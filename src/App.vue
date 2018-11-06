@@ -3,7 +3,7 @@
     <nav class="navbar is-fixed-top is-warning is-bold" id="navbar"
         role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-text-primary is-large">
-            <a class="navbar-item">
+            <a class="navbar-item" :class="activeHome">
                 <router-link class="navbar-item" to="/">Home</router-link>
             </a>
             <a class="navbar-item">
@@ -47,9 +47,44 @@
 
 <script>
 export default {
+  data() {
+    return {
+      active: {
+        Home: true,
+        Performances: false,
+        About: false,
+        Auditions: false,
+        Members: false,
+      },
+    };
+  },
+  methods: {
+    switchActive: (input) => {
+      switch (input) {
+        case 'home':
+          break;
+        case 'performances':
+          break;
+        case 'about':
+          break;
+        case 'auditions':
+          break;
+        case 'members':
+          break;
+        default:
+          break;
+      }
+    },
+  },
   created() {
     // dispatch init once vue instance is created (don't want to overwrite data in async operation)
     this.$store.dispatch('initState');
   },
 };
 </script>
+
+<style>
+.router-link-active {
+    font-size: bold;
+}
+</style>
