@@ -32,7 +32,7 @@
                 <strong><a href="https://lds.org">The Church of Jesus Christ of Latter Day Saints</a></strong>
             </p>
             <p>
-                <strong>Colorado Mormon Chorale</strong> - Denver, CO.
+                <strong>Colorado Saints Chorale and Orchestra</strong> - Denver, CO.
             </p>
             <p>
                 Copyright © 2000-2018 <strong>Colorado Mormon Chorale</strong>

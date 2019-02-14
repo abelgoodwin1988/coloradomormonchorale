@@ -35,7 +35,7 @@
                                                                 'has-text-weight-bold': display_cmc,
                                                                 }"
                                                 @click="toggle_cmc">
-                                                Colorado Mormon Chorale</a>
+                                                Colorado Saints Chorale and Orchestra</a>
                                                 <a
                                                 v-bind:class="{ 'is-active': display_log,
                                                                 'has-text-weight-bold': display_log,
@@ -45,8 +45,8 @@
                                             </p>
 
                                         </div>
-                                        <colorado-mormon-chorale v-if="display_cmc">
-                                        </colorado-mormon-chorale>
+                                        <CSCO v-if="display_cmc">
+                                        </CSCO>
                                         <lamb-of-god v-if="display_log"></lamb-of-god>
                                     </div>
                                 </div>
@@ -61,12 +61,12 @@
 
 <script>
 import LambOfGod from '../components/auditions/LambOfGod.vue';
-import ColoradoMormonChorale from '../components/auditions/ColoradoMormonChorale.vue';
+import csco from '../components/auditions/CSCO.vue';
 
 export default {
   components: {
     LambOfGod,
-    ColoradoMormonChorale,
+    CSCO,
   },
   data() {
     return {

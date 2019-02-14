@@ -1,6 +1,6 @@
-# Colorado Mormon Chorale Webapp
+# Colorado Saints Chorale and Orchestra Webapp
 
-The public repo for the build of the coloradomormonchorale.org application
+The public repo for the build of the coloradosaintschorale.org application
 
 ## Getting Started
 
@@ -19,13 +19,13 @@ Give examples
 Clone the repository
 
 ```unix
-git clone https://github.com/abelgoodwin1988/coloradomormonchorale
+git clone https://github.com/abelgoodwin1988/csco
 ```
 
 move to directory and perform NPM install
 
 ```unix
-cd coloradomormonchorale
+cd csco
 npm install
 ```
 
