@@ -35,7 +35,7 @@
                 <strong>Colorado Saints Chorale and Orchestra</strong> - Denver, CO.
             </p>
             <p>
-                Copyright © 2000-2018 <strong>Colorado Mormon Chorale</strong>
+                Copyright © 2000-2018 <strong>Colorado Saints Chorale and Orchestra</strong>
             </p>
             <p>
                 <router-link to="/privacypolicy"><strong>Privacy Policy</strong></router-link>

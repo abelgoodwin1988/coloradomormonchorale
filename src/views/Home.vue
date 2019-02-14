@@ -7,10 +7,10 @@
                             <div class="hero-body">
                                 <div class="container">
                                     <h1 class="title">
-                                        The Colorado Mormon Chorale
+                                        The Colorado Saints Chorale and Orchestra
                                     </h1>
                                     <h2 class="subtitle">
-                                        The <strong>Colorado Mormon Chorale</strong>, now in its
+                                        The <strong>Colorado Saints Chorale and Orchestra</strong>, now in its
                                         36th year, consists of people from all walks of life,
                                         joined by a common bond of commitment to share their spirit
                                         through music. The Chorale sings year-round, and has

@@ -80,7 +80,7 @@ For the versions available, see the [tags on this repository](https://github.com
 * **Jacob Goodwin** - *Initial work*
 * **CMC Website Committee** - *Concept work & Guiding Committee*
 
-See also the list of [contributors](https://github.com/abelgoodwin1988/coloradomormonchorale/graphs/contributors) who participate in this project.
+See also the list of [contributors](https://github.com/abelgoodwin1988/csco/graphs/contributors) who participate in this project.
 
 ## License
 
